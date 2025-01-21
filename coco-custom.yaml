@@ -1,0 +1,28 @@
+# YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
+# COCO 2017 dataset http://cocodataset.org by Microsoft
+# Example usage: python train.py --data coco.yaml
+# parent
+# ├── yolov5
+# └── datasets
+#     └── coco  ← downloads here (20.1 GB)
+
+path: /content/drive/MyDrive/Colab Notebooks/engr5315/datasets/coco-custom # dataset root dir
+train: images/train 
+val: images/val 
+test: images/test
+# test: ./coco-custom-null/images/test
+
+nc: 11
+# Classes
+names:
+  0: person
+  1: bicycle
+  2: car
+  3: motorcycle
+  4: bus
+  5: train
+  6: truck
+  7: traffic light
+  8: fire hydrant
+  9: stop sign
+  10: parking meter
